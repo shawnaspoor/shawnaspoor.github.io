@@ -1,0 +1,27 @@
+body {
+  padding-top: 30px;
+}
+.breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #ccc;
+  content: ">\00a0";
+}
+.breadcrumb {
+  background-color: #fff;
+}
+.jumbotron-text {
+  display: block;
+  font-family: 'Glegoo', serif;
+}
+.jumbotron-text h3 {
+  color: #f2f2f2;
+}
+aside {
+  background-color: #f2f2f2;
+}
+footer {
+  padding: 40px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #F2F2F2;
+}
