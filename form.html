@@ -2,77 +2,67 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>A Fine Day for a Form</title>
+    <title>Adventure Ideas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
       <header class="row">
         <div class="col-sm-12">
-            <h1>A Fine Day For A Form</h1>
+            <h1>I's gots an idea!</h1>
         </div>
       </header>
       <form>
-         <div class="row">
-        <div class="col-sm-6 form-group">
-                    <label for="name" class="control-label">Your name: <span class="glyphicon glyphicon-star"></span></label>
-                    <input type="text" id="name" class="form-control">
+        <div class="row">
+        <div class="col-sm-12 form-group description">
+                    <label for="idea" class="control-label">Idea*:</label>
+                    <input type="text" id="idea" class="form-control">
+                    <span class="help-block"></span>
         </div>
-        <div class="col-sm-6 form-group">
-                   <label for="email" class="control-label">Your email:</label>
-                   <input type="text" id="email" class="form-control">
-        </div>
+          
+         <div class="col-sm-12 form-group expandeddescription">
+                <label for="expandeddescription" class="control-label">Tell Me More:</label>
+                <textarea id="descTextArea" class="form-control descTextArea"></textarea>
+                <span class="desc-block"></span>
          </div>
+       </div>
          <div class="row">
-            <div class="col-sm-12 form-group">
-                <fieldset>
-                        <legend class="control-label">Favorite flavor of ice cream:</legend>
-                        <div class="radio">
-                           <label for="chocolate">
-                                <input type="radio" name="flavor" value="chocolate" id="chocolate" checked> Chocolate
-                           </label>
-                        </div>
-                        <div class="radio">
-                           <label for="vanilla">
-                                <input type="radio" name="flavor" value="vanilla" id="vanilla"> Vanilla
-                           </label>
-                        </div>
-                        <div class="radio">
-                           <label for="mintchoc">
-                                <input type="radio" name="flavor" value="mintchoc" id="mintchoc"> Mint Chocolate Chip
-                           </label>
-                        </div>
-                        <div class="radio">
-                           <label for="moosetracks">
-                                <input type="radio" name="flavor" value="moosetracks" id="moosetracks"> Moose Tracks
-                           </label>
-                        </div>
-                </fieldset>
+            <div class="col-sm-2 form-group">
+                <label for="cost" class="control-label">Cost:</label>
+               <input type="text" id="cost" class="form-control cost">
             </div>
-         </div>
-         <div class="row">
-            <div class="col-sm-12 form-group">
-                <label for="searchengine" class="control-label">Favorite search engine:</label>
-                <select id="searchengine" class="form-control">
-                        <option checked>Please select one:</option>
-                        <option value="google">Google</option>
-                        <option value="yahoo">Yahoo!</option>
-                        <option value="bing">Bing</option>
-                        <option value="other">Other</option>                            
+            <div class="col-sm-4 form-group scale-group">
+                <label for="scale" class="control-label">On a scale of 1 to 5, how badly do you want to go:</label>
+                <select id="scale" class="form-control">
+                        <option checked value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>                            
+                </select>
+                <span class="scale-block"></span>
+            </div>
+            <div class="col-sm-4 form-group when-group">
+                <label for="when" class="control-label">What day do you want to go?</label>
+                <select id="when" class="form-control">
+                        <option checked value="5">Nov. 5</option>
+                        <option value="6">Nov. 6</option>
+                        <option value="7">Nov. 7</option>
+                        <option value="8">Nov. 8</option>
+                        <option value="9">Nov. 9</option>   
+                        <option value="10">Nov. 10</option>                          
                 </select>
             </div>
          </div>
-         <div class="row">
-            <div class="col-sm-12 form-group">
-                <label for="comments" class="control-label">Your comments:</label>
-                <textarea id="comments" class="form-control"></textarea>
-            </div>
-         </div>
-        <button name="submit" type="submit" class="btn btn-danger btn-lg">Submit</button>
+        
+      
+        <button name="submit" type="submit" class="btn btn-danger btn-lg">Email me!</button>
       </form>
    </div>
       <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+      <script src="app.js"></script>
+
 </body>
 </html>
