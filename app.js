@@ -73,7 +73,7 @@
           $('.hotel').hover(function(){
             console.log('this button was hover overed, entered the button')
             $('.hotel').css({
-                  backgroundColor:'grey'
+                  backgroundColor:'#F2F2f2'
               });
             }, function(){ 
              $('.hotel').css({
@@ -82,10 +82,47 @@
 
           }); 
 
-          $('#hotel').hover(function() {
-            $('#hotel' ).fadeOut( 500 );
-            $('#hotel').fadeIn( 500 );
-          });   
+           $('section').change(function(){
+              if( $('section').val() == 'hotel1'){
+                   $('.hotel').hover(function(){
+                      console.log('this button was hover overed, entered the button')
+                      $('.hotel').css({
+                            backgroundColor:'#F2F2f2'
+                        });
+                      }, function(){ 
+                       $('.hotel').css({
+                            backgroundColor:'#FFFFFF'
+                        });
+
+                  }); 
+              } else  if( $('section').val() =='hotel2') {
+                   $('.hotel').hover(function(){
+                      console.log('this button was hover overed, entered the button')
+                      $('.hotel').css({
+                            backgroundColor:'#F2F2f2'
+                        });
+                      }, function(){ 
+                       $('.hotel').css({
+                            backgroundColor:'#FFFFFF'
+                        });
+
+                    }); 
+            } else {
+                  $('.hotel').hover(function(){
+                      console.log('this button was hover overed, entered the button')
+                      $('.hotel').css({
+                            backgroundColor:'#F2F2f2'
+                        });
+                      }, function(){ 
+                       $('.hotel').css({
+                            backgroundColor:'#FFFFFF'
+                        });
+
+                    }); 
+              }
+
+
+          });
 
 
       });
