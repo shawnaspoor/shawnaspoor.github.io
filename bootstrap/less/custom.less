@@ -26,6 +26,18 @@ section {
   color: darken(@brand-secondary, 35%);
 }
 
+.jumbotron p {
+  color: darken(@brand-secondary, 35%);
+}
+
+.hide {
+  display:none;
+}
+
+.no-banner {
+  padding-bottom: 5px;
+
+}
 //Bootstrap styles changed by me
 img {
   width: auto;
@@ -68,7 +80,13 @@ blockquote {
     	.jumbotron .h3 {
     	 font-size: (@font-size-base * 1.2);
     	}
+
+    .jumbotron p,
+      .jumbotron .p {
+       font-size: (@font-size-base * 0.8);
+      }
 }
+
 @media screen and (max-width: @screen-md-min) {
 
    .jumbotron h1,
@@ -80,6 +98,11 @@ blockquote {
     	.jumbotron .h3 {
     	 font-size: (@font-size-base * 1.2);
     	}
+
+    .jumbotron p,
+      .jumbotron .p {
+       font-size: (@font-size-base * 0.8);
+      }
 }
 
 @media screen and (min-width: @screen-md-min) {
@@ -93,6 +116,12 @@ blockquote {
     	.jumbotron .h3 {
     	 font-size: (@font-size-base * 1.5);
     	}
+
+    .jumbotron p,
+      .jumbotron .p {
+       font-size: (@font-size-base * 1);
+      }  
+
 }
 @media screen and (min-width: @screen-lg-min) {
    .jumbotron h1,
@@ -104,6 +133,11 @@ blockquote {
     	.jumbotron .h3 {
     	 font-size: (@font-size-base * 2);
     	}
+
+    .jumbotron p,
+      .jumbotron .p {
+       font-size: (@font-size-base * 1);
+      }   
 }
 
 

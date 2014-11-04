@@ -56,7 +56,36 @@
            }); 
 
 
-               
+            //Make Banner disappear button
+            $('#banner-button').click(function(){
+                $('.jumbotron').hide(500);
+                $('#no-banner-button').removeClass('hide');
+           }); 
+
+           $('#no-banner-button').click(function(){
+               console.log('the button was clicked');
+                $('.jumbotron').show(500);
+                $('#no-banner-button').addClass('hide');
+           }); 
+            
+
+          //hover effect, need two functions because there are 2 things happening, over and out
+          $('.hotel').hover(function(){
+            console.log('this button was hover overed, entered the button')
+            $('.hotel').css({
+                  backgroundColor:'grey'
+              });
+            }, function(){ 
+             $('.hotel').css({
+                  backgroundColor:'#FFFFFF'
+              });
+
+          }); 
+
+          $('#hotel').hover(function() {
+            $('#hotel' ).fadeOut( 500 );
+            $('#hotel').fadeIn( 500 );
+          });   
 
 
       });

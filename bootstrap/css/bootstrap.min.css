@@ -6184,6 +6184,15 @@ section {
 .jumbotron h3 {
   color: #999999;
 }
+.jumbotron p {
+  color: #999999;
+}
+.hide {
+  display: none;
+}
+.no-banner {
+  padding-bottom: 5px;
+}
 img {
   width: auto;
   height: auto;
@@ -6210,6 +6219,10 @@ blockquote {
   .jumbotron .h3 {
     font-size: 16.8px;
   }
+  .jumbotron p,
+  .jumbotron .p {
+    font-size: 11.2px;
+  }
 }
 @media screen and (max-width: 992px) {
   .jumbotron h1,
@@ -6219,6 +6232,10 @@ blockquote {
   .jumbotron h3,
   .jumbotron .h3 {
     font-size: 16.8px;
+  }
+  .jumbotron p,
+  .jumbotron .p {
+    font-size: 11.2px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -6230,6 +6247,10 @@ blockquote {
   .jumbotron .h3 {
     font-size: 21px;
   }
+  .jumbotron p,
+  .jumbotron .p {
+    font-size: 14px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .jumbotron h1,
@@ -6239,6 +6260,10 @@ blockquote {
   .jumbotron h3,
   .jumbotron .h3 {
     font-size: 28px;
+  }
+  .jumbotron p,
+  .jumbotron .p {
+    font-size: 14px;
   }
 }
 /* Buttons with mixins */

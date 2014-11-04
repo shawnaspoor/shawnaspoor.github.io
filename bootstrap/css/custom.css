@@ -25,3 +25,8 @@ footer {
   text-align: center;
   background-color: #F2F2F2;
 }
+
+.jumbotron-text p {
+  font-size: 14px;
+  color: #ffffff;
+}
