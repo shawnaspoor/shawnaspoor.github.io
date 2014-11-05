@@ -70,59 +70,54 @@
             
 
           //hover effect, need two functions because there are 2 things happening, over and out
-          $('.hotel').hover(function(){
+          $('#hotel1').hover(function(){
             console.log('this button was hover overed, entered the button')
-            $('.hotel').css({
-                  backgroundColor:'#F2F2f2'
+            $('#hotel1').css({
+                  mozBorderRadius: '15px',
+                  borderRadius: '15px',
+                  backgroundColor:'#F2F2f2',
+                  padding: '5px'
               });
             }, function(){ 
-             $('.hotel').css({
-                  backgroundColor:'#FFFFFF'
+             $('#hotel1').css({
+                  backgroundColor:'#FFFFFF',
+                  padding:'0'
               });
 
           }); 
+          //hover effect, need two functions because there are 2 things happening, over and out
+          $('#hotel2').hover(function(){
+            console.log('this button was hover overed, entered the button')
+            $('#hotel2').css({
+                  mozBorderRadius: '15px',
+                  borderRadius: '15px',
+                  backgroundColor:'#F2F2f2',
+                  padding: '5px'
 
-           $('section').change(function(){
-              if( $('section').val() == 'hotel1'){
-                   $('.hotel').hover(function(){
-                      console.log('this button was hover overed, entered the button')
-                      $('.hotel').css({
-                            backgroundColor:'#F2F2f2'
-                        });
-                      }, function(){ 
-                       $('.hotel').css({
-                            backgroundColor:'#FFFFFF'
-                        });
+              });
+            }, function(){ 
+             $('#hotel2').css({
+                  backgroundColor:'#FFFFFF',
+                  padding:'0'
+              });
 
-                  }); 
-              } else  if( $('section').val() =='hotel2') {
-                   $('.hotel').hover(function(){
-                      console.log('this button was hover overed, entered the button')
-                      $('.hotel').css({
-                            backgroundColor:'#F2F2f2'
-                        });
-                      }, function(){ 
-                       $('.hotel').css({
-                            backgroundColor:'#FFFFFF'
-                        });
+          }); 
+          //hover effect, need two functions because there are 2 things happening, over and out
+          $('#hotel3').hover(function(){
+            console.log('this button was hover overed, entered the button')
+            $('#hotel3').css({
+                 mozBorderRadius: '15px',
+                  borderRadius: '15px',
+                  backgroundColor:'#F2F2f2',
+                  padding: '5px'
+              });
+            }, function(){ 
+             $('#hotel3').css({
+                  backgroundColor:'#FFFFFF',
+                  padding:'0'
 
-                    }); 
-            } else {
-                  $('.hotel').hover(function(){
-                      console.log('this button was hover overed, entered the button')
-                      $('.hotel').css({
-                            backgroundColor:'#F2F2f2'
-                        });
-                      }, function(){ 
-                       $('.hotel').css({
-                            backgroundColor:'#FFFFFF'
-                        });
+              });
 
-                    }); 
-              }
-
-
-          });
-
+          }); 
 
       });
