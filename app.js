@@ -42,16 +42,19 @@
 
            //REVIST ALL DESCRIPTION FOCUSIN AND OUT FUNCTIONS 
            //Make the text in the box disappear when the user clicks on it
+            $(document).ready(function(){
+              $('#descTextArea').text('Use this area to expand a bit, if you need to.');
+            });
             $('#expandeddescription').focusin(function(){
-                $('.desc-block').text(' ');
+                $('#descTextArea').text(' ');
               
            }); 
             //Make the text in the box reappear if the user clicks away without inputting anything
             $('#expandeddescription').focusout(function(){
-              if($('.descTextArea').val().length == 0){
-                $('.desc-block').text('Use this area to expand a bit, if you need to.');
+              if($(!'#descTextArea').val()){
+                $('#descTextArea').text('');
               } else {
-                $('.desc-block').text(' ');
+                $('#descTextArea').text('Use this area to expand a bit, if you need to.');
               }
            }); 
 
