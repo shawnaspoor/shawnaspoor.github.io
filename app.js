@@ -123,4 +123,14 @@
 
           }); 
 
+
+          //make the twitter feed disappear
+          $('#no-twitter-button').click(function(){
+                //$('#twitterMeThis').show(500);
+                $('#centerColumn').removeClass('col-xs-12 col-sm-8 col-md-8');
+                $('#centerColumn').addClass('col-xs-12 col-sm-12 col-md-12');
+                $('#twitterMeThis').addClass('hide')
+           }); 
+
+
       });
