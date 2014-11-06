@@ -88,6 +88,7 @@
               });
 
           }); 
+
           //hover effect, need two functions because there are 2 things happening, over and out
           $('#hotel2').hover(function(){
             console.log('this button was hover overed, entered the button')
@@ -105,6 +106,7 @@
               });
 
           }); 
+
           //hover effect, need two functions because there are 2 things happening, over and out
           $('#hotel3').hover(function(){
             console.log('this button was hover overed, entered the button')
@@ -131,6 +133,29 @@
                 $('#centerColumn').addClass('col-xs-12 col-sm-12 col-md-12');
                 $('#twitterMeThis').addClass('hide')
            }); 
+ 
+          //form validation based on submit button click
+          $('#emailMe').click(function(submit){
+              if($('#idea').val().length == 0){
+                $('.description .help-block').text('Well, you kind of need to tell me what your idea is.');
+                $('.description').attr({
+                      class: 'col-sm-12 form-group description has-error'
+                });
+                submit.preventDefault();
+              }else {
+                $('#myModal').modal();
+                submit.preventDefault();
+              }
+          });
+
+
+          //excited image hover effect
+          $('#excited').hover(function(){
+            console.log('this button was hover overed, entered the button')
+            $('.popup').show(500);
+            }, function(){ 
+             $('.popup').hide(500);
+          });
 
 
       });
