@@ -76,15 +76,15 @@
           $('#hotel1').hover(function(){
             console.log('this button was hover overed, entered the button')
             $('#hotel1').css({
+                  backgroundColor:'#FFFFFF',
+                  padding:'0'
+              });
+            }, function(){ 
+             $('#hotel1').css({
                   mozBorderRadius: '15px',
                   borderRadius: '15px',
                   backgroundColor:'#F2F2f2',
                   padding: '5px'
-              });
-            }, function(){ 
-             $('#hotel1').css({
-                  backgroundColor:'#FFFFFF',
-                  padding:'0'
               });
 
           }); 
@@ -111,16 +111,16 @@
           $('#hotel3').hover(function(){
             console.log('this button was hover overed, entered the button')
             $('#hotel3').css({
-                 mozBorderRadius: '15px',
-                  borderRadius: '15px',
-                  backgroundColor:'#F2F2f2',
-                  padding: '5px'
+                 
+                  backgroundColor:'#FFFFFF',
+                  padding:'0'
               });
             }, function(){ 
              $('#hotel3').css({
-                  backgroundColor:'#FFFFFF',
-                  padding:'0'
-
+                  mozBorderRadius: '15px',
+                  borderRadius: '15px',
+                  backgroundColor:'#F2F2f2',
+                  padding: '5px'
               });
 
           }); 
@@ -155,6 +155,14 @@
             $('.popup').show(500);
             }, function(){ 
              $('.popup').hide(500);
+          });
+
+          //filtering
+          $('section:even').css({
+              backgroundColor:'#F2F2F2',
+              mozBorderRadius: '15px',
+              borderRadius: '15px',
+              padding: '5px'
           });
 
 
