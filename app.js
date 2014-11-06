@@ -18,8 +18,7 @@
                  $('.scale-group .scale-block').text('Is this some sort of a game to you?');
               }
 
-          });
-           //end of dropdown menu functions
+          }); //end of dropdown menu functions
 
 
            //form validation
@@ -35,12 +34,8 @@
                       class: 'col-sm-12 form-group description'
                 });
               }
+           }); //end of form validation
 
-
-           }); 
-
-
-           //REVIST ALL DESCRIPTION FOCUSIN AND OUT FUNCTIONS 
            //Make the text in the box disappear when the user clicks on it
             $(document).ready(function(){
               $('#descTextArea').text('Use this area to expand a bit, if you need to.');
@@ -48,7 +43,8 @@
             $('#expandeddescription').focusin(function(){
                 $('#descTextArea').text(' ');
               
-           }); 
+           }); //end of making the text in the box disappear when they click
+
             //Make the text in the box reappear if the user clicks away without inputting anything
             $('#expandeddescription').focusout(function(){
               if($(!'#descTextArea').val()){
@@ -56,7 +52,7 @@
               } else {
                 $('#descTextArea').text('Use this area to expand a bit, if you need to.');
               }
-           }); 
+           });//end of  text in the box disappear
 
 
             //Make Banner disappear button
@@ -69,12 +65,11 @@
                console.log('the button was clicked');
                 $('.jumbotron').show(500);
                 $('#no-banner-button').addClass('hide');
-           }); 
+           }); //end of banner disappear button
             
 
-          //hover effect, need two functions because there are 2 things happening, over and out
+          //hover effect on the hotel page
           $('#hotel1').hover(function(){
-            console.log('this button was hover overed, entered the button')
             $('#hotel1').css({
                   backgroundColor:'#FFFFFF',
                   padding:'0'
@@ -88,10 +83,7 @@
               });
 
           }); 
-
-          //hover effect, need two functions because there are 2 things happening, over and out
           $('#hotel2').hover(function(){
-            console.log('this button was hover overed, entered the button')
             $('#hotel2').css({
                   mozBorderRadius: '15px',
                   borderRadius: '15px',
@@ -106,10 +98,7 @@
               });
 
           }); 
-
-          //hover effect, need two functions because there are 2 things happening, over and out
           $('#hotel3').hover(function(){
-            console.log('this button was hover overed, entered the button')
             $('#hotel3').css({
                  
                   backgroundColor:'#FFFFFF',
@@ -123,7 +112,7 @@
                   padding: '5px'
               });
 
-          }); 
+          }); //end of hotel effect
 
 
           //make the twitter feed disappear
@@ -132,7 +121,7 @@
                 $('#centerColumn').removeClass('col-xs-12 col-sm-8 col-md-8');
                 $('#centerColumn').addClass('col-xs-12 col-sm-12 col-md-12');
                 $('#twitterMeThis').addClass('hide')
-           }); 
+           }); //end of twitter button
  
           //form validation based on submit button click
           $('#emailMe').click(function(submit){
@@ -146,7 +135,7 @@
                 $('#myModal').modal();
                 submit.preventDefault();
               }
-          });
+          }); //end of form validation
 
 
           //excited image hover effect
@@ -155,15 +144,15 @@
             $('.popup').show(500);
             }, function(){ 
              $('.popup').hide(500);
-          });
+          });//end of excited image hover effect
 
-          //filtering
+          //filtering of all even sections
           $('section:even').css({
               backgroundColor:'#F2F2F2',
               mozBorderRadius: '15px',
               borderRadius: '15px',
               padding: '5px'
-          });
+          }); //end of filtering
 
 
       });
