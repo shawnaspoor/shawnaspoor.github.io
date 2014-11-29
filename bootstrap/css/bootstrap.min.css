@@ -6196,6 +6196,10 @@ section {
 canvas {
   border: solid 1px black;
 }
+#smiley-button {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
 img {
   width: auto;
   height: auto;

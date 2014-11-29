@@ -89,16 +89,33 @@
 
 		    <canvas width="600" height="400" id="canvas">
 		    </canvas>
-		    <br />
-		     <button type="button" class="btn btn-secondary" id="canvas-clear-button">
-                Clear the canvas
-            </button>		
-             <button type="button" class="btn btn-secondary" id="smiley-button">
-                Draw a smiley face
-            </button>
-            <button type="button" class="btn btn-secondary" id="smiley-button">
-                Something else
-            </button>
+
+		    <div>
+		    	<label  for="image">Select an image: </label>
+		    	<select id = 'image'>
+		    		<option checked> Please select one: </option>
+		    		<option value="nightStrip">The Strip at Night</option>
+		    		<option value="hotelRoom">Hotel Room</option>
+		    		<option value="moonRise">Moonrise</option>
+		    		<option value="neonShirt">Neon Museum Shirt</option>
+		    	</select>
+		    	<br />
+		    	<label for="top">Top of image text:</label>
+		    	<input type="text" id="top">
+		    	<br />
+		    	<label for="bottom">Bottom of image text:</label>
+		    	<input type="text" id="bottom">  
+		    	<br />
+		    	<button type="button" class="btn btn-secondary" id="smiley-button">
+                	Draw a smiley face
+            	</button>
+		    	<br />
+		    	<button type="button" class="btn btn-secondary" id="create">Create the image</button>
+		        <button type="button" class="btn btn-secondary" id="canvas-clear-button">
+                	Clear the canvas
+                </button>		
+           
+         </div>
         </div>
 
 			        
