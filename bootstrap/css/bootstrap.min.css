@@ -6193,6 +6193,9 @@ section {
 .no-banner {
   padding-bottom: 5px;
 }
+canvas {
+  border: solid 1px black;
+}
 img {
   width: auto;
   height: auto;
