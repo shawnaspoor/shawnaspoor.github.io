@@ -17,32 +17,36 @@
   <body>
     <section data-role="page" id="home">
       <header data-role="header" data-theme="b" data-position="fixed">
-        <img  src="las_vegas_vacation_jumbotron_small.png" alt="las vegas sign"/>
-        <div class="headertext">
-            <h1>Vegas Vacation</h1>
-            <h3>A story about planning and doing</h3>
-         </div>
+         <div class="ui-grid-a">
+              <div class="ui-block-a hisrc">
+             
+                   <img src="las_vegas_vacation_jumbotron_small.png"  data-1x="las_vegas_vacation_jumbotron.png" data-2x="las_vegas_vacation_jumbotron.png" alt="las vegas sign"/>
+              
+              </div>
+              <div class="ui-block-b">
+                    <h1>Vegas Vacation</h1>
+                    <h3>A story about planning and doing</h3>
+              </div>
+          </div>
       </header> 
-      <div class="row">
-        <nav  role="navigation">
-          <ul >
-            <li ><a href="index.html">Home</a></li>
-            <li ><a href="jcanvas.html">JCanvas</a></li>
-            <li ><a href="multimedia.html">Multimedia</a></li>
-            <li class="active"><a href="memories">Memories</a></li>
-            <li class="active"><a href="#page2">Memories-Neon Museum</a></li>
-            <li class="active"><a href="#page3">Memories-Observation Wheel</a></li>
-            <li class="active"><a href="#page4">Memories-Moon Rise</a></li>
-          </ul>
-        </nav>
-      </div>
+    
+      <nav data-role="navbar">
+        <ul >
+          <li><a class="ui-btn-active ui-btn-icon-right ui-icon-home" href="memories">Memories</a></li>
+          <li><a class="ui-btn-icon-right ui-icon-eye"  href="#page2">Memories-Neon Museum</a> </li>
+          <li><a class="ui-btn-icon-right ui-icon-eye"  href="#page3">Memories-Observation Wheel</a></li>
+          <li><a class="ui-btn-icon-right ui-icon-eye"  href="#page4">Memories-Moon Rise</a></li>
+        </ul>
+      </nav>
+  
       <main data-role="main" class="ui-content">
        <div class="row">   
         <h3>Memories</h3>
         <p>We had such a good time...</p>
-        <img src="images/neonMuseum1.jpg" alt="Neone Museum">
+        <img src="images/neonMuseum1.jpg" alt="Neon Museum">
         <p>We had such a good time...</p>
-        <img src="images/neonMuseum2.jpg" alt="Neone Museum">       
+        <img src="images/neonMuseum2.jpg" alt="Neon Museum">
+       <!-- <button class="ui-btn ui-corner-all">Button</button> --> 
 	    </div>
     </main>
 	    <footer data-role="footer">
@@ -54,10 +58,14 @@
 
   <section data-role="page" id="page2">
           <header data-role="header" data-theme="b" data-position="fixed">
-          <img  src="las_vegas_vacation_jumbotron_small.png" alt="las vegas sign"/>
-          <div class="headertext">
-              <h1>Vegas Vacation</h1>
-              <h3>A story about planning and doing</h3>
+          <div class="ui-grid-a">
+              <div class="ui-block-a hisrc">
+                   <img src="las_vegas_vacation_jumbotron_small.png"  data-1x="las_vegas_vacation_jumbotron.png" data-2x="las_vegas_vacation_jumbotron.png" alt="las vegas sign"/>
+              </div>
+              <div class="ui-block-b">
+                    <h1>Vegas Vacation</h1>
+                    <h3>A story about planning and doing</h3>
+              </div>
           </div>
         </header> 
       <div class="row">
@@ -73,13 +81,16 @@
                 </ul>
          </nav>
       </div>
-      <main data-role="main" class="ui-content">
-       <div class="row">   
+      <main data-role="main" class="ui-content ui-grid-a" >
         <h3>Memories</h3>
-        <p>We had such a good time...</p>
-        <img src="images/neonMuseum3.jpg" alt="Neone Museum">
+        <div class="ui-block-a">  
+         <p>We had such a good time...</p>
+         <img src="images/neonMuseum3.jpg" alt="Neone Museum">
+       </div>
+       <div class="ui-block-b">  
         <p>We had such a good time...</p>
         <img src="images/neonMuseum4.jpg" alt="Neone Museum">            
+        </div>
       </div>
     </main>
       <footer data-role="footer">
@@ -92,10 +103,16 @@
 
    <section data-role="page" id="page3">
         <header data-role="header" data-theme="b" data-position="fixed">
-          <img  src="las_vegas_vacation_jumbotron_small.png" alt="las vegas sign"/>
-          <div class="headertext">
-              <h1>Vegas Vacation</h1>
-              <h3>A story about planning and doing</h3>
+           <div class="ui-grid-a">
+              <div class="ui-block-a hisrc">
+             
+                   <img src="las_vegas_vacation_jumbotron_small.png"  data-1x="las_vegas_vacation_jumbotron.png" data-2x="las_vegas_vacation_jumbotron.png" alt="las vegas sign"/>
+              
+              </div>
+              <div class="ui-block-b">
+                    <h1>Vegas Vacation</h1>
+                    <h3>A story about planning and doing</h3>
+              </div>
           </div>
         </header> 
       <div class="row">
@@ -131,10 +148,16 @@
   </section>
    <section data-role="page" id="page4">
        <header data-role="header" data-theme="b" data-position="fixed">
-          <img  src="las_vegas_vacation_jumbotron_small.png" alt="las vegas sign"/>
-          <div class="headertext">
-              <h1>Vegas Vacation</h1>
-              <h3>A story about planning and doing</h3>
+          <div class="ui-grid-a">
+              <div class="ui-block-a hisrc">
+             
+                   <img src="las_vegas_vacation_jumbotron_small.png"  data-1x="las_vegas_vacation_jumbotron.png" data-2x="las_vegas_vacation_jumbotron.png" alt="las vegas sign"/>
+              
+              </div>
+              <div class="ui-block-b">
+                    <h1>Vegas Vacation</h1>
+                    <h3>A story about planning and doing</h3>
+              </div>
           </div>
         </header> 
       <div class="row">
@@ -157,6 +180,23 @@
         <img src="images/wheel3.jpg" alt="Observation Wheel">
         <p>We had such a good time...</p>                 
       </div>
+      <div class="ui-grid-c">
+        <div class="ui-block-a">
+          <img src="images/wheel3.jpg" alt="Observation Wheel">
+        </div>
+        <div class="ui-block-b">
+          <img src="images/wheel3.jpg" alt="Observation Wheel">
+        </div>
+        <div class="ui-block-c">
+          <img src="images/wheel3.jpg" alt="Observation Wheel">
+        </div>
+        <div class="ui-block-d">
+          <img src="images/wheel3.jpg" alt="Observation Wheel">
+        </div>
+      </div>
+
+
+
     </main>
 
       <footer data-role="footer">
@@ -167,7 +207,15 @@
 
   <!-- javascript -->
 
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <script src="js/hisrc.js"></script>
+  <script>
+      $.hisrc.speedTest();
+      $(document).ready(function(){
+        $(".hisrc img").hisrc();
+      });
+  </script>
 </body>
 </html>
