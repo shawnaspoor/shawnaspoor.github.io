@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DGMD E-20 Assignment 3</title>
+<meta charset = "utf-8">
+<!--for referencing device width for responsive behavior later-->
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+<link href='http://fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
+<link type="text/css" href="skin/blue.monday/jplayer.blue.monday.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container">
+
+        <header>
+
+            <div class="jumbotron">
+                <div class="container">
+                    <div class ="hisrc" >
+                        <img class="jumbotronimage pull-left" src="las_vegas_vacation_jumbotron_small.png"  data-1x="las_vegas_vacation_jumbotron.png" data-2x="las_vegas_vacation_jumbotron.png" alt="las vegas sign"/>
+                    </div>
+                    <div class="jumbotrontext">
+                      
+           
+                    <h1>Vegas Vacation</h1>
+                    <h3>A story about planning and doing</h3>
+                    <!--<p>On a mobile device? Make the banner disappear for a better experience.</p>-->
+                    <button type="button" class="btn btn-secondary banner-button" id="banner-button">
+                      Make Banner Disappear </button>
+                    
+                  </div>
+        </div>
+
+      </div>
+      <div class="no-banner">
+        <button type="button" class="btn btn-secondary hide" id="no-banner-button">
+              Bring that banner back! </button>
+      </div>
+
+    </header> 
+
+     
+      <div class="row">
+        <div class="container">
+          <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Vegas Vacation</a>
+              </div>
+              <div class="collapse navbar-collapse " id="collapse">
+                <ul class="nav navbar-nav">
+                  <li ><a href="index.html">Home</a></li>
+                  <li><a href="hotels.html">Hotels</a></li>
+                  <li><a href="food.html">Dining Options</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Activities <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="shows.html">Shows</a></li>
+                      <li><a href="museums.html">Museums</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="form.html">Tell Me Your Ideas</a></li>
+                  <li ><a href="jcanvas.html">JCanvas</a></li>
+                  <li class="active"><a href="multimedia.html">Multimedia</a></li>
+                </ul>
+             
+              </div>
+            </div>
+         </nav>
+        </div>
+    </div>      
+
+
+        <div class="row">   
+
+            <div class="col-xs-12 col-sm-12 col-md-12" id="centerColumn" > 
+            <section>  <h3>This is an HTML5 Video embed</h3>
+              <video width="400" height="300" controls preload="none" muted poster="images/moonRise.jpg">
+                  <source src="video.mp4" type="video/mp4">
+                  <source src="video.ogv" type="video/ogg">
+                  Your browser does not support the video tag.
+              </video>
+            </section>
+            <section>
+              <h3>This is an audio file embed</h3>
+              <audio controls>
+                <source src="audio.ogv" type="audio/ogg">
+                <source src="audio.mp3" type="audio/mp3" >
+              </audio>
+            </section>
+            <section>
+               <h3>This is a jplayer video</h3>
+               <div id="jp_container_1" class="jp-video " role="application" aria-label="media player">
+                  <div class="jp-type-single">
+                    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                    <div class="jp-gui">
+                      <div class="jp-video-play">
+                        <button class="jp-video-play-icon" role="button" tabindex="0">play</button>
+                      </div>
+                      <div class="jp-interface">
+                        <div class="jp-progress">
+                          <div class="jp-seek-bar">
+                            <div class="jp-play-bar"></div>
+                          </div>
+                        </div>
+                        <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                        <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                        <div class="jp-details">
+                          <div class="jp-title" aria-label="title">&nbsp;</div>
+                        </div>
+                        <div class="jp-controls-holder">
+                          <div class="jp-volume-controls">
+                            <button class="jp-mute" role="button" tabindex="0">mute</button>
+                            <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                            <div class="jp-volume-bar">
+                              <div class="jp-volume-bar-value"></div>
+                            </div>
+                          </div>
+                          <div class="jp-controls">
+                            <button class="jp-play" role="button" tabindex="0">play</button>
+                            <button class="jp-stop" role="button" tabindex="0">stop</button>
+                          </div>
+                          <div class="jp-toggles">
+                            <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+                            <button class="jp-full-screen" role="button" tabindex="0">full screen</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="jp-no-solution">
+                      <span>Update Required</span>
+                      To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                    </div>
+                  </div>
+                </div>
+             </section>
+             <section>
+                <h3>This is a jplayer audio </h3>
+                <div id="jquery_jplayer_2" class="jp-jplayer"></div>
+                  <div id="jp_container_2" class="jp-audio" role="application" aria-label="media player">
+                    <div class="jp-type-single">
+                      <div class="jp-gui jp-interface">
+                        <div class="jp-volume-controls">
+                          <button class="jp-mute" role="button" tabindex="0">mute</button>
+                          <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                          <div class="jp-volume-bar">
+                            <div class="jp-volume-bar-value"></div>
+                          </div>
+                        </div>
+                        <div class="jp-controls-holder">
+                          <div class="jp-controls">
+                            <button class="jp-play" role="button" tabindex="0">play</button>
+                            <button class="jp-stop" role="button" tabindex="0">stop</button>
+                          </div>
+                          <div class="jp-progress">
+                            <div class="jp-seek-bar">
+                              <div class="jp-play-bar"></div>
+                            </div>
+                          </div>
+                          <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                          <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                          <div class="jp-toggles">
+                            <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="jp-details">
+                        <div class="jp-title" aria-label="title">&nbsp;</div>
+                      </div>
+                      <div class="jp-no-solution">
+                        <span>Update Required</span>
+                        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                      </div>
+                    </div>
+                  </div>
+              </section>
+
+			        
+	    </div>
+	    <div class="container">
+	        <footer class="row">
+	            DGMD-20 Assignment 3 - Shawna Spoor
+	        </footer>
+	    </div>
+	</div>
+
+
+
+    <!-- javascript -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jcanvas.min.js"></script>
+    <script src="js/project3.js"></script>
+    <script src="js/jquery.jplayer.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+    <script src="js/hisrc.js"></script>
+	<script>
+	$.hisrc.speedTest();
+	$(document).ready(function(){
+		$(".hisrc img").hisrc();
+	});
+	</script>
+</body>
+</html>
