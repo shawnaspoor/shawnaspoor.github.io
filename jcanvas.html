@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>DGMD E-20 Assignment 3</title>
+  <title>DGMD E-20 Assignment 3</title>
 <meta charset = "utf-8">
 <!--for referencing device width for responsive behavior later-->
 <meta name="viewport" content="width=device-width, intial-scale=1.0">
@@ -14,9 +14,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-
-  <body>
-    <div class="container">
+ <div class="container">
 
         <header>
 
@@ -26,22 +24,16 @@
                         <img class="jumbotronimage pull-left" src="las_vegas_vacation_jumbotron_small.png"  data-1x="las_vegas_vacation_jumbotron.png" data-2x="las_vegas_vacation_jumbotron.png" alt="las vegas sign"/>
                     </div>
                     <div class="jumbotrontext">
-                      
-           
-                    <h1>Vegas Vacation</h1>
-                    <h3>A story about planning and doing</h3>
-                    <!--<p>On a mobile device? Make the banner disappear for a better experience.</p>-->
-                    <button type="button" class="btn btn-secondary banner-button" id="banner-button">
-                      Make Banner Disappear </button>
-                    
+                      <h1>Vegas Vacation</h1>
+                      <h3>A story about planning and doing</h3>
+                      <!--<p>On a mobile device? Make the banner disappear for a better experience.</p>-->
+                      <button type="button" class="btn btn-secondary banner-button" id="banner-button">Make Banner Disappear </button>         
                   </div>
-        </div>
-
+          </div>
       </div>
-      <div class="no-banner">
-        <button type="button" class="btn btn-secondary hide" id="no-banner-button">
-              Bring that banner back! </button>
-      </div>
+    <div class="no-banner">
+      <button type="button" class="btn btn-secondary hide" id="no-banner-button">Bring that banner back! </button>
+    </div>
 
     </header> 
 
@@ -87,61 +79,65 @@
             <div class="col-xs-12 col-sm-12 col-md-12" id="centerColumn" > 
             <h2>Make something funny, go on.</h2>
 
-		    <canvas width="600" height="400" id="canvas">
-		    </canvas>
+  <canvas width="600" height="400" id="canvas"> </canvas>
+      <div>
+          <label  for="image">Select an image: </label>
+          <select id ="image">
+            <option checked> Please select one: </option>
+            <option value="nightStrip">The Strip at Night</option>
+            <option value="hotelRoom">Hotel Room</option>
+            <option value="moonRise">Moonrise</option>
+            <option value="neonShirt">Neon Museum Shirt</option>
+          </select>
+          <br /><br />
+          <label for="top">Draggable Text:</label>
+          <input type="text" id="top">
+          
+          <br /><br />
+          <button type="button" class="btn btn-secondary" id="smiley-button">
+                  Draw a smiley face
+              </button>
+          <br />  
+          <button type="button" class="btn btn-default" id="arrow1"> <img src="images/arrow1.png" style="width:55px;" /> </button>
+          <button type="button" class="btn btn-default" id="arrow2"> <img src="images/arrow2.png" style="width:55px;" /> </button>
+          <button type="button" class="btn btn-default" id="arrow3"> <img src="images/arrow3.png" style="width:55px;" /> </button>
+          <button type="button" class="btn btn-default" id="arrow4"> <img src="images/arrow4.png" style="width:55px;" /> </button>
+          <button type="button" class="btn btn-default" id="arrow5"> <img src="images/arrow5.png" style="width:55px;" /> </button><br/>
+          <button type="button" class="btn btn-default" id="dragon"> <img src="images/dragon.png" style="width:55px;" /> </button>
+          <button type="button" class="btn btn-default" id="dino"> <img src="images/dino.png"style="width:55px;" /> </button>
+          <button type="button" class="btn btn-default" id="drinks"> <img src="images/drinks.png" style="width:55px;" /> </button>
+          <button type="button" class="btn btn-default" id="funny"> <img src="images/funny.png" style="width:55px;" /> </button>
 
-		    <div>
-		    	<label  for="image">Select an image: </label>
-		    	<select id = 'image'>
-		    		<option checked> Please select one: </option>
-		    		<option value="nightStrip">The Strip at Night</option>
-		    		<option value="hotelRoom">Hotel Room</option>
-		    		<option value="moonRise">Moonrise</option>
-		    		<option value="neonShirt">Neon Museum Shirt</option>
-		    	</select>
-		    	<br />
-		    	<label for="top">Top of image text:</label>
-		    	<input type="text" id="top">
-		    	<br />
-		    	<label for="bottom">Bottom of image text:</label>
-		    	<input type="text" id="bottom">  
-		    	<br />
-		    	<button type="button" class="btn btn-secondary" id="smiley-button">
-                	Draw a smiley face
-            	</button>
-		    	<br />
-		    	<button type="button" class="btn btn-secondary" id="create">Create the image</button>
-		        <button type="button" class="btn btn-secondary" id="canvas-clear-button">
-                	Clear the canvas
-                </button>		
-           
-         </div>
+          <br /><br />
+          <button type="button" class="btn btn-secondary" id="create">Add text to image</button>
+          
+            <button type="button" class="btn btn-secondary" id="canvas-clear-button">
+                  Clear the canvas
+                </button> 
+                <br />
+            
         </div>
+      <div class="container">
+        <footer class="row">
+                  DGMD-20 Assignment 3 - Shawna Spoor
+          </footer>
+      </div>
+    </div>
+  </div>
+</div>
+ 
 
-			        
-	    </div>
-	    <div class="container">
-	        <footer class="row">
-	            DGMD-20 Assignment 3 - Shawna Spoor
-	        </footer>
-	    </div>
-	</div>
-
-
-
-    <!-- javascript -->
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="js/jcanvas.min.js"></script>
-    <script src="js/project3.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/for_jcanvas.js"></script>
 
-    <script src="js/hisrc.js"></script>
-	<script>
-	$.hisrc.speedTest();
-	$(document).ready(function(){
-		$(".hisrc img").hisrc();
-	});
-	</script>
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/hisrc.js"></script>
+  <script>
+  $.hisrc.speedTest();
+  $(document).ready(function(){
+    $(".hisrc img").hisrc();
+  });
+  </script>
+
 </body>
-</html>

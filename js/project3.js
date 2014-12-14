@@ -38,6 +38,10 @@ $(document).ready(function(){
         remainingDuration: true,
         toggleDuration: true
       });
+
+
+
+
 	//chose the image function
 	$('#image').change(function (){
 		if($('#image').val() == 'neonShirt'){
@@ -83,7 +87,6 @@ $(document).ready(function(){
 		}
 
 	});
-
 	//end of image function
 
 	//add text function
@@ -106,41 +109,43 @@ $(document).ready(function(){
 				imgsrc = "images/neonShirt.jpg";
 			
 		}
-		//end of switch
-		//adding the text to the image
-		function textForImage() {
-			var top = $('#top').val().toUpperCase();
-			var bottom = $('#bottom').val().toUpperCase();
-
-			$('#canvas').drawText({
-				  fillStyle: '#fff',
-				  strokeStyle: '#000',
-				  strokeWidth: 1,
-				  x: 300, y: 30,
-				  fontSize: 40,
-				  fontFamily: 'Impact, sans-serif',
-				  text: top
-			}).drawText({
-			  	  fillStyle: '#fff',
-				  strokeStyle: '#000',
-				  strokeWidth: 1,
-				  x: 300, y: 370,
-				  fontSize: 40,
-				  fontFamily: 'Impact, sans-serif',
-				  text: bottom
-			})
-		};
-		//end of text to image
-		//write it all to the canvas
-		$('#canvas').drawImage({
-			source: imgsrc,
-			x:300,
-			y:200,
-			width:600,
-			height: 400,
-			load:textForImage
-		});
 	});
+	//end of switch
+
+	//adding the text to the image
+	function textForImage() {
+		var top = $('#top').val().toUpperCase();
+		var bottom = $('#bottom').val().toUpperCase();
+
+		$('#canvas').drawText({
+			  fillStyle: '#fff',
+			  strokeStyle: '#000',
+			  strokeWidth: 1,
+			  x: 300, y: 30,
+			  fontSize: 40,
+			  fontFamily: 'Impact, sans-serif',
+			  text: top
+		}).drawText({
+		  	  fillStyle: '#fff',
+			  strokeStyle: '#000',
+			  strokeWidth: 1,
+			  x: 300, y: 370,
+			  fontSize: 40,
+			  fontFamily: 'Impact, sans-serif',
+			  text: bottom
+		})
+	};
+	//end of text to image
+	//write it all to the canvas
+	$('#canvas').drawImage({
+		source: imgsrc,
+		x:300,
+		y:200,
+		width:600,
+		height: 400,
+		load:textForImage
+	});
+
 	//end of add text function
 
 
@@ -148,7 +153,7 @@ $(document).ready(function(){
 
 	//make a smiley face appear
 	$('#smiley-button').click( function (){
-	// Draw a smiley face, also chained methofds
+	// Draw a smiley face, also chained methods
 	$('#canvas').drawPolygon({
 	  draggable: true,
 	  layer: true,

@@ -5,6 +5,8 @@
 <meta charset = "utf-8">
 <!--for referencing device width for responsive behavior later-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="themes/memories.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <link rel="stylesheet" href="css/custom.css" />
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -16,7 +18,7 @@
 
   <body>
     <section data-role="page" id="home">
-      <header data-role="header" data-theme="b" data-position="fixed">
+      <header data-role="header" data-theme="c" data-position="fixed">
          <div class="ui-grid-a">
               <div class="ui-block-a hisrc">
              
@@ -33,18 +35,21 @@
       <nav data-role="navbar">
         <ul >
           <li><a class="ui-btn-active ui-btn-icon-right ui-icon-home" href="memories">Memories</a></li>
-          <li><a class="ui-btn-icon-right ui-icon-eye"  href="#page2">Memories-Neon Museum</a> </li>
-          <li><a class="ui-btn-icon-right ui-icon-eye"  href="#page3">Memories-Observation Wheel</a></li>
-          <li><a class="ui-btn-icon-right ui-icon-eye"  href="#page4">Memories-Moon Rise</a></li>
+          <li><a class="ui-btn-icon-right ui-icon-eye" data-transition="slide" href="#page2">Memories-Neon Museum</a> </li>
+          <li><a class="ui-btn-icon-right ui-icon-eye"  data-transition="slide" href="#page3">Memories-Observation Wheel</a></li>
+          <li><a class="ui-btn-icon-right ui-icon-eye"  data-transition="slide" href="#page4">Memories-Moon Rise</a></li>
         </ul>
       </nav>
   
       <main data-role="main" class="ui-content">
        <div class="row">   
         <h3>Memories</h3>
-        <p>We had such a good time...</p>
+        <div  data-role="collapsible">
+          <h3>We had such a good time...</h3>
+          <p >We had such a good time...</p>
+        </div>
         <img src="images/neonMuseum1.jpg" alt="Neon Museum">
-        <p>We had such a good time...</p>
+        <p  data-role="collapsible" >We had such a good time...</p>
         <img src="images/neonMuseum2.jpg" alt="Neon Museum">
        <!-- <button class="ui-btn ui-corner-all">Button</button> --> 
 	    </div>
@@ -57,7 +62,7 @@
   <!-- page 2 starts here -->
 
   <section data-role="page" id="page2">
-          <header data-role="header" data-theme="b" data-position="fixed">
+          <header data-role="header" data-theme="c" data-position="fixed">
           <div class="ui-grid-a">
               <div class="ui-block-a hisrc">
                    <img src="las_vegas_vacation_jumbotron_small.png"  data-1x="las_vegas_vacation_jumbotron.png" data-2x="las_vegas_vacation_jumbotron.png" alt="las vegas sign"/>
@@ -68,19 +73,15 @@
               </div>
           </div>
         </header> 
-      <div class="row">
-         <nav  role="navigation">
-                <ul >
-                  <li ><a href="index.html">Home</a></li>
-                  <li ><a href="jcanvas.html">JCanvas</a></li>
-                  <li ><a href="multimedia.html">Multimedia</a></li>
-                  <li class="active"><a href="memories">Memories</a></li>
-                  <li class="active"><a href="#page2">Memories-Neon Museum</a></li>
-                  <li class="active"><a href="#page3">Memories-Observation Wheel</a></li>
-                  <li class="active"><a href="#page4">Memories-Moon Rise</a></li>
-                </ul>
-         </nav>
-      </div>
+      <nav data-role="navbar">
+        <ul >
+          <li><a class="ui-btn-icon-right ui-icon-home" data-transition="slide" data-direction="reverse" href="memories">Memories</a></li>
+          <li><a class="ui-btn-active ui-btn-icon-right ui-icon-eye"  href="#page2">Memories-Neon Museum</a> </li>
+          <li><a class="ui-btn-icon-right ui-icon-eye" data-transition="slide" href="#page3">Memories-Observation Wheel</a></li>
+          <li><a class="ui-btn-icon-right ui-icon-eye" data-transition="slide"  href="#page4">Memories-Moon Rise</a></li>
+        </ul>
+      </nav>
+
       <main data-role="main" class="ui-content ui-grid-a" >
         <h3>Memories</h3>
         <div class="ui-block-a">  
@@ -102,7 +103,7 @@
   <!-- page 3 starts here -->
 
    <section data-role="page" id="page3">
-        <header data-role="header" data-theme="b" data-position="fixed">
+        <header data-role="header" data-theme="c" data-position="fixed">
            <div class="ui-grid-a">
               <div class="ui-block-a hisrc">
              
@@ -115,19 +116,14 @@
               </div>
           </div>
         </header> 
-      <div class="row">
-          <nav  role="navigation">
-                <ul >
-                  <li ><a href="index.html">Home</a></li>
-                  <li ><a href="jcanvas.html">JCanvas</a></li>
-                  <li ><a href="multimedia.html">Multimedia</a></li>
-                  <li class="active"><a href="memories">Memories</a></li>
-                  <li class="active"><a href="#page2">Memories-Neon Museum</a></li>
-                  <li class="active"><a href="#page3">Memories-Observation Wheel</a></li>
-                  <li class="active"><a href="#page4">Memories-Moon Rise</a></li>
-                </ul>
-         </nav>
-      </div>
+      <nav data-role="navbar">
+        <ul >
+          <li><a class="ui-btn-icon-right ui-icon-home" data-transition="slide" data-direction="reverse" href="memories">Memories</a></li>
+          <li><a class="ui-btn-icon-right ui-icon-eye" data-transition="slide" data-direction="reverse" href="#page2">Memories-Neon Museum</a> </li>
+          <li><a class="ui-btn-active ui-btn-icon-right ui-icon-eye"  href="#page3">Memories-Observation Wheel</a></li>
+          <li><a class="ui-btn-icon-right ui-icon-eye" data-transition="slide"  href="#page4">Memories-Moon Rise</a></li>
+        </ul>
+      </nav>
       <main data-role="main" class="ui-content">
        <div class="row">   
         <h3>Memories</h
@@ -147,7 +143,7 @@
 
   </section>
    <section data-role="page" id="page4">
-       <header data-role="header" data-theme="b" data-position="fixed">
+       <header data-role="header" data-theme="c" data-position="fixed">
           <div class="ui-grid-a">
               <div class="ui-block-a hisrc">
              
@@ -160,19 +156,14 @@
               </div>
           </div>
         </header> 
-      <div class="row">
-          <nav  role="navigation">
-                <ul >
-                  <li ><a href="index.html">Home</a></li>
-                  <li ><a href="jcanvas.html">JCanvas</a></li>
-                  <li ><a href="multimedia.html">Multimedia</a></li>
-                  <li class="active"><a href="memories">Memories</a></li>
-                  <li class="active"><a href="#page2">Memories-Neon Museum</a></li>
-                  <li class="active"><a href="#page3">Memories-Observation Wheel</a></li>
-                  <li class="active"><a href="#page4">Memories-Moon Rise</a></li>
-                </ul>
-         </nav>
-      </div>
+     <nav data-role="navbar">
+        <ul >
+          <li><a class="ui-btn-icon-right ui-icon-home" data-transition="slide" data-direction="reverse" href="memories">Memories</a></li>
+          <li><a class="ui-btn-icon-right ui-icon-eye" data-transition="slide" data-direction="reverse"  href="#page2">Memories-Neon Museum</a> </li>
+          <li><a class="ui-btn-icon-right ui-icon-eye" data-transition="slide" data-direction="reverse"  href="#page3">Memories-Observation Wheel</a></li>
+          <li><a class="ui-btn-active ui-btn-icon-right ui-icon-eye"  href="#page4">Memories-Moon Rise</a></li>
+        </ul>
+      </nav>
       <main data-role="main" class="ui-content">
        <div class="row">   
         <h3>Memories</h3>
