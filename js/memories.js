@@ -32,10 +32,6 @@ $( document ).on( "pageinit", "[data-role='page'].memories", function() {
             $.mobile.changePage( "memories.html#" + next, { transition: "slide" } );
         });
     }
-    // Disable the "next" button if there is no next page
-    else {
-        $( ".control .next", page ).addClass( "ui-disabled" );
-    }
     // The same for the previous page (we set data-dom-cache="true" so there is no need to prefetch)
     if ( prev ) {
         $( document ).on( "swiperight", page, function() {
@@ -44,9 +40,6 @@ $( document ).on( "pageinit", "[data-role='page'].memories", function() {
         $( ".control .prev", page ).on( "click", function() {
             $.mobile.changePage("memories.html#" + prev, { transition: "slide", reverse: true } );
         });
-    }
-    else {
-        $( ".control .prev", page ).addClass( "ui-disabled" );
     };
 });
 

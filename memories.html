@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <section data-role="page" id="home" class="memories" data-dom-cache="true" data-next="page2">
+    <section data-role="page" id="home" class="memories" data-dom-cache="true" data-next="page2" data-url="home">
       <header data-role="header" data-theme="c" data-position="fixed">
          <div class="ui-grid-a">
               <div class="ui-block-a hisrc">
@@ -49,7 +49,7 @@
           <p >It's a shame we can't do this more often, damn money or rather my lack thereof.</p>
         </div><br/>
       <form>
-        <fieldset data-role="controlgroup" data-type="horizontal">
+        <fieldset data-role="controlgroup">
             <legend>Where should we go next?</legend>
                  <label for="Bahamas">Bahamas
                       <input type="radio" name="radio-choice-1" id="Bahamas" value="Bahamas" checked="checked">
@@ -106,7 +106,7 @@
 
   <!-- page 2 starts here -->
 
-  <section data-role="page" id="page2" class="memories" data-dom-cache="true" data-next="page3" data-prev="home">
+  <section data-role="page" id="page2" class="memories" data-dom-cache="true" data-next="page3" data-prev="home" data-url="home">
           <header data-role="header" data-theme="c" data-position="fixed">
           <div class="ui-grid-a">
               <div class="ui-block-a hisrc">
@@ -156,7 +156,7 @@
   <!-- page 2 ends here -->
   <!-- page 3 starts here -->
 
-   <section data-role="page" id="page3" class="memories" data-dom-cache="true" data-next="page4" data-prev="page2">
+   <section data-role="page" id="page3" class="memories" data-dom-cache="true" data-next="page4" data-prev="page2" data-url="home">
         <header data-role="header" data-theme="c" data-position="fixed">
            <div class="ui-grid-a">
               <div class="ui-block-a hisrc">
@@ -181,10 +181,12 @@
       <main data-role="main" class="ui-content">
        <div class="row">   
         <h3>Memories</h3>
-        <p>Swipe from left to right to see more photos</p>
-        <img src="images/wheel1.jpg" alt="Observation Wheel">
+        <a href="#popUpMessage" data-rel="popup" data-transition="pop"><img src="images/wheel1.jpg" alt="Observation Wheel"  /></a>
+        <div data-role="popup" id="popUpMessage">
+          <p>If you want a high-res of these just let me know!</p>
+        </div>
         <p>We had such a good time...</p>
-        <img src="images/wheel2.jpg" alt="Observation Wheel">        
+          <a href="#popUpMessage" data-rel="popup" data-transition="pop"><img src="images/wheel2.jpg" alt="Observation Wheel" data-rel="popup" data-transition="pop" />   </a>     
       </div>
     </main>
       <footer data-role="footer">
@@ -196,7 +198,7 @@
 
 
   </section>
-   <section data-role="page" id="page4" class="memories" data-dom-cache="true" data-prev="page3" >
+   <section data-role="page" id="page4" class="memories" data-dom-cache="true" data-prev="page3" data-url="home">
        <header data-role="header" data-theme="c" data-position="fixed">
           <div class="ui-grid-a">
               <div class="ui-block-a hisrc">
