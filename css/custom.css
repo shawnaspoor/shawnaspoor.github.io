@@ -49,43 +49,15 @@ img  {
 
   }
 } 
-
+.head {
+  padding-left: 20px;
+}
 .noWhen {
   color: red;
   font-weight: bold;
 }
 
-#wheel {
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-}
-.wheel1 {
-
-  background-image: url(../images/wheel1.jpg);
-}
-.wheel2 {
-  background-image: url(../images/wheel2.jpg);
-}
-.wheel3 {
-  background-image: url(../images/wheel3.jpg);
-}
-.stripAtNight {
-  background-image: url(../images/stripAtNight.jpg);
-}
-.wheel2 {
-  background-image: url(../images/moonRise.jpg);
-}
-
-/*
-body {
-  padding-top: 30px;
-}
-
 footer {
-  padding: 40px;
-  margin-top: 20px;
-  text-align: center;
-  background-color: #F2F2F2;
+  padding-left: 10px;
 }
-*/
+

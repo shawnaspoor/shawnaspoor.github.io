@@ -5,11 +5,13 @@
 <meta charset = "utf-8">
 <!--for referencing device width for responsive behavior later-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="themes/memories.min.css" />
-<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <link rel="stylesheet" href="css/custom.css" />
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+<link rel="stylesheet" href="themes/memories.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+ <link rel="stylesheet" href="themes/memories.css" />   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -17,18 +19,11 @@
   </head>
 
   <body>
-    <section data-role="page" id="home" class="memories" data-dom-cache="true" data-next="page2" data-url="home">
+    <section data-role="page" id="home" class="memories" data-dom-cache="true" data-next="page2" data-url="home"  data-theme="c">
       <header data-role="header" data-theme="c" data-position="fixed">
-         <div class="ui-grid-a">
-              <div class="ui-block-a hisrc">
-             
-                   <img src="las_vegas_vacation_jumbotron_small.png"  data-1x="las_vegas_vacation_jumbotron.png" data-2x="las_vegas_vacation_jumbotron.png" alt="las vegas sign"/>
-              
-              </div>
-              <div class="ui-block-b">
+         <div class="head">
                     <h1>Vegas Vacation</h1>
                     <h3>A story about planning and doing</h3>
-              </div>
           </div>
       </header> 
     
@@ -45,7 +40,7 @@
        <div class="row">   
         <h3>Memories - Let's do it again</h3>
         <div  data-role="collapsible">
-          <h3>We had such a good time...Let's plan our next trip!</h3>
+          <h4>We had such a good time...Let's plan our next trip!</h4>
           <p >It's a shame we can't do this more often, damn money or rather my lack thereof.</p>
         </div><br/>
       <form>
@@ -106,16 +101,11 @@
 
   <!-- page 2 starts here -->
 
-  <section data-role="page" id="page2" class="memories" data-dom-cache="true" data-next="page3" data-prev="home" data-url="home">
+  <section data-role="page" id="page2" class="memories" data-dom-cache="true" data-next="page3" data-prev="page1" data-url="home"  data-theme="c">
           <header data-role="header" data-theme="c" data-position="fixed">
-          <div class="ui-grid-a">
-              <div class="ui-block-a hisrc">
-                   <img src="las_vegas_vacation_jumbotron_small.png"  data-1x="las_vegas_vacation_jumbotron.png" data-2x="las_vegas_vacation_jumbotron.png" alt="las vegas sign"/>
-              </div>
-              <div class="ui-block-b">
+           <div class="head">
                     <h1>Vegas Vacation</h1>
                     <h3>A story about planning and doing</h3>
-              </div>
           </div>
         </header> 
       <nav data-role="navbar">
@@ -129,22 +119,38 @@
 
       <main data-role="main" class="ui-content ui-grid-a" >
         <h3>Memories</h3>
+
+          <div class="ui-grid-solo">
+            <div class="ui-block-a"><p>This place was so cool. I was so bummed when my camera died half way through. Next time we need to go back when the sun is down because I bet the six signs they have restored and that light up are so awesome.</p></div>
+          </div>
+
         <div class="ui-block-a">  
-         <p>This little shirt looks like he is having a great time, must be the dry-cleaning chemicals.</p>
+        <img src="images/neon4.jpg" alt="Neone Museum">            
+        </div>
+        <div class="ui-block-b">  
          <img src="images/neonMuseum3.jpg" alt="Neone Museum">
        </div>
-       <div class="ui-block-b">  
-        <p>Stardust, old school cool.</p>
+      
+       <div class="ui-block-a">  
         <img src="images/neonMuseum4.jpg" alt="Neone Museum">            
         </div>
-          <div class="ui-block-a">  
-         <p>Even the sign was cool.</p>
-         <img src="images/neonMuseum1.jpg" alt="Neone Museum">
+      
+      <div class="ui-block-b">  
+        <img src="images/neon2.jpg" alt="Neone Museum"> 
        </div>
-  <div class="ui-block-b">  
-        <p>Loved the building so much I bought the mug. I have a thing for mugs.</p>
-        <img src="images/neonMuseum2.jpg" alt="Neone Museum">            
-        </div>
+      
+      <div class="ui-block-a"> 
+        <img src="images/neonMuseum2.jpg" alt="Neone Museum"> 
+      </div>
+      
+      <div class="ui-block-b">  
+        <img src="images/neon1.jpg" alt="Neone Museum">        
+      </div>
+    
+    
+ 
+
+ 
 
       </div>
     </main>
@@ -156,18 +162,11 @@
   <!-- page 2 ends here -->
   <!-- page 3 starts here -->
 
-   <section data-role="page" id="page3" class="memories" data-dom-cache="true" data-next="page4" data-prev="page2" data-url="home">
+   <section data-role="page" id="page3" class="memories" data-dom-cache="true" data-next="page4" data-prev="page2" data-url="home"  data-theme="c">
         <header data-role="header" data-theme="c" data-position="fixed">
-           <div class="ui-grid-a">
-              <div class="ui-block-a hisrc">
-             
-                   <img src="las_vegas_vacation_jumbotron_small.png"  data-1x="las_vegas_vacation_jumbotron.png" data-2x="las_vegas_vacation_jumbotron.png" alt="las vegas sign"/>
-              
-              </div>
-              <div class="ui-block-b">
+          <div class="head">
                     <h1>Vegas Vacation</h1>
                     <h3>A story about planning and doing</h3>
-              </div>
           </div>
         </header> 
       <nav data-role="navbar">
@@ -181,12 +180,19 @@
       <main data-role="main" class="ui-content">
        <div class="row">   
         <h3>Memories</h3>
-        <a href="#popUpMessage" data-rel="popup" data-transition="pop"><img src="images/wheel1.jpg" alt="Observation Wheel"  /></a>
+        <p>The observation wheel was way more fun than I thought it would be. It really gave us a view of the strip and the surrounding area that we never had before.</p>
+        
         <div data-role="popup" id="popUpMessage">
           <p>If you want a high-res of these just let me know!</p>
         </div>
-        <p>We had such a good time...</p>
-          <a href="#popUpMessage" data-rel="popup" data-transition="pop"><img src="images/wheel2.jpg" alt="Observation Wheel" data-rel="popup" data-transition="pop" />   </a>     
+          <a href="#popUpMessage" data-rel="popup" data-transition="pop"><img src="images/wheel1.jpg" alt="Observation Wheel"  /></a>
+          <a href="#popUpMessage" data-rel="popup" data-transition="pop"><img src="images/wheel2.jpg" alt="Observation Wheel"  /></a> 
+          <a href="#popUpMessage" data-rel="popup" data-transition="pop"><img src="images/wheel3.jpg" alt="Observation Wheel"  /></a> 
+          <a href="#popUpMessage" data-rel="popup" data-transition="pop"><img src="images/wheel9.jpg" alt="Observation Wheel"  /></a> 
+          <a href="#popUpMessage" data-rel="popup" data-transition="pop"><img src="images/wheel5.jpg" alt="Observation Wheel"  /></a>     
+          <a href="#popUpMessage" data-rel="popup" data-transition="pop"><img src="images/wheel6.jpg" alt="Observation Wheel"  /></a>   
+ 
+
       </div>
     </main>
       <footer data-role="footer">
@@ -198,18 +204,11 @@
 
 
   </section>
-   <section data-role="page" id="page4" class="memories" data-dom-cache="true" data-prev="page3" data-url="home">
+   <section data-role="page" id="page4" class="memories" data-dom-cache="true" data-prev="page3" data-url="home"  data-theme="c">
        <header data-role="header" data-theme="c" data-position="fixed">
-          <div class="ui-grid-a">
-              <div class="ui-block-a hisrc">
-             
-                   <img src="las_vegas_vacation_jumbotron_small.png"  data-1x="las_vegas_vacation_jumbotron.png" data-2x="las_vegas_vacation_jumbotron.png" alt="las vegas sign"/>
-              
-              </div>
-              <div class="ui-block-b">
+        <div class="head">
                     <h1>Vegas Vacation</h1>
                     <h3>A story about planning and doing</h3>
-              </div>
           </div>
         </header> 
      <nav data-role="navbar">
@@ -223,22 +222,22 @@
       <main data-role="main" class="ui-content">
        <div class="row">   
         <h3>Memories</h3>
-        <p>We had such a good time...</p>
+        <p>We timed the Observation Wheel just right, we saw sunset and moonrise.</p>
         <img src="images/wheel3.jpg" alt="Observation Wheel">
-        <p>We had such a good time...</p>                 
+        <p>The strip really is magical at night...</p>                 
       </div>
       <div class="ui-grid-c">
         <div class="ui-block-a">
-          <img src="images/wheel3.jpg" alt="Observation Wheel">
+          <img src="images/wheel7.jpg" alt="Observation Wheel">
         </div>
         <div class="ui-block-b">
-          <img src="images/wheel3.jpg" alt="Observation Wheel">
+          <img src="images/wheel8.jpg" alt="Observation Wheel">
         </div>
         <div class="ui-block-c">
-          <img src="images/wheel3.jpg" alt="Observation Wheel">
+          <img src="images/wheel9.jpg" alt="Observation Wheel">
         </div>
         <div class="ui-block-d">
-          <img src="images/wheel3.jpg" alt="Observation Wheel">
+          <img src="images/wheel10.jpg" alt="Observation Wheel">
         </div>
       </div>
 
@@ -257,12 +256,5 @@
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
  <script src="js/memories.js"></script>
-  <script src="js/hisrc.js"></script>
-  <script>
-      $.hisrc.speedTest();
-      $(document).ready(function(){
-        $(".hisrc img").hisrc();
-      });
-  </script>
 </body>
 </html>
