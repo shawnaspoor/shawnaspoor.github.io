@@ -22,14 +22,14 @@ $( document ).on( "pageinit", "[data-role='page'].memories", function() {
     // Check if we did set the data-next attribute
     if ( next ) {
         // Prefetch the next page
-        $.mobile.loadPage("memories#"+ next  );
+        $.mobile.loadPage( "memories.html#" +next);
         // Navigate to next page on swipe left
         $( document ).on( "swipeleft", page, function() {
-            $.mobile.changePage("memories#" + next, { transition: "slide" });
+            $.mobile.changePage( "memories.html#" +next, { transition: "slide" });
         });
         // Navigate to next page when the "next" button is clicked
         $( ".control .next", page ).on( "click", function() {
-            $.mobile.changePage( "memories#"+ next, { transition: "slide" } );
+            $.mobile.changePage( "memories.html#" + next, { transition: "slide" } );
         });
     }
     // Disable the "next" button if there is no next page
@@ -39,10 +39,10 @@ $( document ).on( "pageinit", "[data-role='page'].memories", function() {
     // The same for the previous page (we set data-dom-cache="true" so there is no need to prefetch)
     if ( prev ) {
         $( document ).on( "swiperight", page, function() {
-            $.mobile.changePage( "memories#"+ prev, { transition: "slide", reverse: true } );
+            $.mobile.changePage( "memories.html#" + prev, { transition: "slide", reverse: true } );
         });
         $( ".control .prev", page ).on( "click", function() {
-            $.mobile.changePage("memories#"+ prev, { transition: "slide", reverse: true } );
+            $.mobile.changePage("memories.html#" + prev, { transition: "slide", reverse: true } );
         });
     }
     else {
