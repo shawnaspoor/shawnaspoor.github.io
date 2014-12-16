@@ -1,0 +1,96 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<title>DGMD E-20 Assignment 3</title>
+<meta charset = "utf-8">
+<!--for referencing device width for responsive behavior later-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="themes/memories.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="css/custom.css" />
+
+<link rel="prefetch" href="images/wheel1.jpg">
+<link rel="prefetch" href="images/wheel2.jpg">
+<link rel="prefetch" href="images/wheel3.jpg">
+<link rel="prefetch" href="images/stripAtNight.jpg">
+<link rel="prefetch" href="images/moonRise.jpg">
+
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <section data-role="page" id="home">
+      <header data-role="header" data-theme="c" data-position="fixed">
+         <div class="ui-grid-a">
+              <div class="ui-block-a hisrc">
+             
+                   <img src="las_vegas_vacation_jumbotron_small.png"  data-1x="las_vegas_vacation_jumbotron.png" data-2x="las_vegas_vacation_jumbotron.png" alt="las vegas sign"/>
+              
+              </div>
+              <div class="ui-block-b">
+                    <h1>Vegas Vacation</h1>
+                    <h3>A story about planning and doing</h3>
+              </div>
+          </div>
+      </header> 
+    
+      <nav data-role="navbar">
+        <ul >
+          <li><a class="ui-btn-active ui-btn-icon-right ui-icon-home" href="memories">Memories</a></li>
+          <li><a class="ui-btn-icon-right ui-icon-eye" data-transition="slide" href="#page2">Memories-Neon Museum</a> </li>
+          <li><a class="ui-btn-icon-right ui-icon-eye"  data-transition="slide" href="#page3">Memories-Observation Wheel</a></li>
+          <li><a class="ui-btn-icon-right ui-icon-eye"  data-transition="slide" href="#page4">Memories-Moon Rise</a></li>
+        </ul>
+      </nav>
+  
+   
+
+      <main data-role="main" class="ui-content">
+       <div class="row">   
+        <h3>Memories</h3>
+        <p>Swipe from left to right to see more photos</p>
+        <div id="wheel" class="wheel1"> 
+              stuff here<br />
+              stuff here<br />
+              stuff here<br />
+              stuff here<br />
+              stuff here<br />
+              stuff here<br />
+              stuff here<br />
+              stuff here<br />
+
+        </div>
+      </div>
+    </main>
+      <footer data-role="footer">
+         DGMD-20 Assignment 3 - Shawna Spoor
+      </footer>
+
+</section>
+
+       <!-- javascript -->
+
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/memories.js"></script>
+
+  <script src="js/hisrc.js"></script>
+  <script>
+      $.hisrc.speedTest();
+      $(document).ready(function(){
+        $(".hisrc img").hisrc();
+      });
+  </script>
+  </body>
+</html>
+
+ 

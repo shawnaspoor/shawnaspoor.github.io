@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <section data-role="page" id="home">
+    <section data-role="page" id="home" class="memories" data-dom-cache="true" data-next="page2">
       <header data-role="header" data-theme="c" data-position="fixed">
          <div class="ui-grid-a">
               <div class="ui-block-a hisrc">
@@ -43,15 +43,60 @@
   
       <main data-role="main" class="ui-content">
        <div class="row">   
-        <h3>Memories</h3>
+        <h3>Memories - Let's do it again</h3>
         <div  data-role="collapsible">
-          <h3>We had such a good time...</h3>
-          <p >We had such a good time...</p>
+          <h3>We had such a good time...Let's plan our next trip!</h3>
+          <p >It's a shame we can't do this more often, damn money or rather my lack thereof.</p>
+        </div><br/>
+      <form>
+        <fieldset data-role="controlgroup" data-type="horizontal">
+            <legend>Where should we go next?</legend>
+                 <label for="Bahamas">Bahamas
+                      <input type="radio" name="radio-choice-1" id="Bahamas" value="Bahamas" checked="checked">
+                 </label>
+                <label for="Mexico">Mexico
+                    <input type="radio" name="radio-choice-1" id="Mexico" value="Mexico">
+                </label>
+                 <label for="Seychelles">Seychelles
+                    <input type="radio" name="radio-choice-1" id="Seychelles" value="Seychelles">
+                 </label>
+                
+        </fieldset>
+        <fieldset data-role="controlgroup" id="whenToGo">
+            <legend>What time of year works best?</legend>
+            <input type="checkbox" name="when" id="Fall">
+            <label for="Fall">Fall</label>
+            <input type="checkbox" name="when" id="Winter">
+            <label for="Winter">Winter</label>
+            <input type="checkbox" name="when" id="Spring">
+            <label for="Spring">Spring</label>
+            <input type="checkbox" name="when" id="Summer">
+            <label for="Summer">Summer</label>
+        </fieldset>
+        <span class="noWhen" > </span>
+
+
+      <div> 
+        <label for="length" class="select">How long should we go fo?</label>
+           <select name="length" id="length" data-native-menu="false" data-inline="true">
+              <option>How many days?</option>
+              <option value="short">Short: 1-3</option>
+              <option value="medium">Medium: 3-5 days</option>
+              <option value="long">Long: 5-10</option>
+              <option value="forever">Forever</option>
+          </select>
         </div>
-        <img src="images/neonMuseum1.jpg" alt="Neon Museum">
-        <p  data-role="collapsible" >We had such a good time...</p>
-        <img src="images/neonMuseum2.jpg" alt="Neon Museum">
-       <!-- <button class="ui-btn ui-corner-all">Button</button> --> 
+        <div>
+          <label for="thoughts">Additional Thoughts:</label>
+          <textarea cols="60" rows="60" name="thoughts" id="thoughts"></textarea>
+          
+        </div>
+        <div>
+           <label for="people">Should we invite anyone else?</label>
+          <input type="text" name="people" id="people"></textarea>
+        </div>
+          <button name="submit" type="submit" class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Tell me!</button>
+      </form>
 	    </div>
     </main>
 	    <footer data-role="footer">
@@ -61,7 +106,7 @@
 
   <!-- page 2 starts here -->
 
-  <section data-role="page" id="page2">
+  <section data-role="page" id="page2" class="memories" data-dom-cache="true" data-next="page3" data-prev="home">
           <header data-role="header" data-theme="c" data-position="fixed">
           <div class="ui-grid-a">
               <div class="ui-block-a hisrc">
@@ -85,13 +130,22 @@
       <main data-role="main" class="ui-content ui-grid-a" >
         <h3>Memories</h3>
         <div class="ui-block-a">  
-         <p>We had such a good time...</p>
+         <p>This little shirt looks like he is having a great time, must be the dry-cleaning chemicals.</p>
          <img src="images/neonMuseum3.jpg" alt="Neone Museum">
        </div>
        <div class="ui-block-b">  
-        <p>We had such a good time...</p>
+        <p>Stardust, old school cool.</p>
         <img src="images/neonMuseum4.jpg" alt="Neone Museum">            
         </div>
+          <div class="ui-block-a">  
+         <p>Even the sign was cool.</p>
+         <img src="images/neonMuseum1.jpg" alt="Neone Museum">
+       </div>
+  <div class="ui-block-b">  
+        <p>Loved the building so much I bought the mug. I have a thing for mugs.</p>
+        <img src="images/neonMuseum2.jpg" alt="Neone Museum">            
+        </div>
+
       </div>
     </main>
       <footer data-role="footer">
@@ -102,7 +156,7 @@
   <!-- page 2 ends here -->
   <!-- page 3 starts here -->
 
-   <section data-role="page" id="page3">
+   <section data-role="page" id="page3" class="memories" data-dom-cache="true" data-next="page4" data-prev="page3">
         <header data-role="header" data-theme="c" data-position="fixed">
            <div class="ui-grid-a">
               <div class="ui-block-a hisrc">
@@ -126,8 +180,8 @@
       </nav>
       <main data-role="main" class="ui-content">
        <div class="row">   
-        <h3>Memories</h
-        <p>We had such a good time...</p>
+        <h3>Memories</h3>
+        <p>Swipe from left to right to see more photos</p>
         <img src="images/wheel1.jpg" alt="Observation Wheel">
         <p>We had such a good time...</p>
         <img src="images/wheel2.jpg" alt="Observation Wheel">        
@@ -142,7 +196,7 @@
 
 
   </section>
-   <section data-role="page" id="page4">
+   <section data-role="page" id="page4" class="memories" data-dom-cache="true" data-prev="page3" >
        <header data-role="header" data-theme="c" data-position="fixed">
           <div class="ui-grid-a">
               <div class="ui-block-a hisrc">
@@ -193,14 +247,14 @@
       <footer data-role="footer">
          DGMD-20 Assignment 3 - Shawna Spoor
       </footer>
-  </section>]
+  </section>
 <!-- page 4 ends here -->
 
   <!-- javascript -->
-
+ 
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
+ <script src="js/memories.js"></script>
   <script src="js/hisrc.js"></script>
   <script>
       $.hisrc.speedTest();
